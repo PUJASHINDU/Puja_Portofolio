@@ -5,7 +5,7 @@ import servicetree from "../assets/service/servicetree.png";
 
 export function LogoSection6() {
   return (
-    <section className="py-8 px-8 lg:py-20 mt-10">
+    <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto grid gap-8 lg:grid-cols-2 items-center">
         {/* Bagian Typography */}
         <div className="text-center lg:text-left -mt-6">

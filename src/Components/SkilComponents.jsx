@@ -4,7 +4,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 export function SkilComponents() {
   return (
-    <section className="py-8 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <section className="py-8 px-4 sm:px-6 mb-36 lg:py-16 lg:px-8">
       <div className="container mx-auto text-center">
         {/* Responsive Typography for Section Title */}
         <Typography
