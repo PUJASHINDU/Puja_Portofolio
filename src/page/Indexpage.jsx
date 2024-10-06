@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarComponents from '../components/NavbarComponents'
+import NavbarComponents from '../Components/NavbarComponents'
 import AboutComponents from '../Components/AboutComponents'
 import SkilComponents from '../Components/SkilComponents'
 import ServiceComponents from '../Components/ServiceComponents'
