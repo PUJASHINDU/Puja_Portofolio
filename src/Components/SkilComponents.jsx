@@ -1,98 +1,93 @@
 import { Typography } from "@material-tailwind/react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaFigma } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+} from "react-icons/si";
 
 export function SkilComponents() {
   return (
     <section className="py-8 px-4 sm:px-6 mb-36 lg:py-16 lg:px-8">
       <div className="container mx-auto text-center">
-        {/* Responsive Typography for Section Title */}
+        {/* Judul */}
         <Typography
           color="blue-gray"
           variant="lead"
-          className="font-semibold font-poppins text-base sm:text-lg lg:text-2xl">
+          className="font-semibold font-poppins text-base sm:text-lg lg:text-2xl"
+        >
           My Skills
         </Typography>
 
-        {/* Responsive Typography for Sub Title */}
-        <p
-          className="my-4 text-lg font-poppins text-gray-600 leading-snug"
-        >
+        {/* Subjudul */}
+        <p className="my-4 text-lg font-poppins text-gray-600 leading-snug">
           Trusted Tools and Technologies
         </p>
 
-        {/* Responsive Typography for Description */}
-
-        {/* Wrapper for the icons */}
-        <div className="flex flex-wrap justify-center items-center space-x-6 lg:space-x-12 relative h-40 overflow-hidden">
-          {/* HTML Icon and Text */}
-          <div className="flex flex-col items-center animate-slideInOut">
-            <FaHtml5 className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-orange-600" />
-            <Typography variant="small" className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base">
-              HTML
-            </Typography>
-          </div>
-
-          {/* CSS Icon and Text */}
-          <div className="flex flex-col items-center animate-slideInOut">
-            <FaCss3Alt className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-blue-600" />
-            <Typography variant="small" className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base">
-              CSS
-            </Typography>
-          </div>
-
-          {/* Tailwind CSS Icon and Text */}
-          <div className="flex flex-col items-center animate-slideInOut">
-            <SiTailwindcss className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-teal-400" />
-            <Typography variant="small" className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base">
-              Tailwind CSS
-            </Typography>
-          </div>
-
-          {/* JavaScript Icon and Text */}
-          <div className="flex flex-col items-center animate-slideInOut">
-            <FaJs className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-yellow-400" />
-            <Typography variant="small" className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base">
-              JavaScript
-            </Typography>
-          </div>
-
-          {/* React JS Icon and Text */}
-          <div className="flex flex-col items-center animate-slideInOut">
-            <FaReact className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-blue-400" />
-            <Typography variant="small" className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base">
-              React JS
-            </Typography>
-          </div>
-
-          {/* Figma Icon and Text */}
-          <div className="flex flex-col items-center animate-slideInOut">
-            <FaFigma className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-light-blue-300" />
-            <Typography variant="small" className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base">
-              Figma
-            </Typography>
+        {/* Wrapper animasi marquee */}
+        <div className="overflow-hidden">
+          <div className="flex animate-marquee space-x-10 w-max py-4">
+            {skills.map((skill, index) => (
+              <SkillItem key={index} icon={skill.icon} label={skill.label} />
+            ))}
+            {/* Duplikat untuk animasi looping */}
+            {skills.map((skill, index) => (
+              <SkillItem key={`dup-${index}`} icon={skill.icon} label={skill.label} />
+            ))}
           </div>
         </div>
 
-        {/* CSS untuk mengulangi animasi */}
+        {/* CSS Animasi */}
         <style>
           {`
-            @keyframes slideInFromRight {
-              0% { transform: translateX(100%); opacity: 0; }   /* Mulai dari luar layar kanan */
-              10% { opacity: 1; }                                /* Muncul sepenuhnya */
-              80% { opacity: 1; }                                /* Tetap terlihat */
-              100% { transform: translateX(-100%); opacity: 0; } /* Keluar dari layar kiri */
+            @keyframes marquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
             }
-
-            .animate-slideInOut {
-              animation: slideInFromRight 20s linear forwards;    /* Total durasi per ikon */
-              animation-fill-mode: forwards;                      /* Memastikan animasi tidak reset */
-              animation-iteration-count: infinite;                /* Ulangi animasi */
+            .animate-marquee {
+              animation: marquee 25s linear infinite;
             }
           `}
         </style>
       </div>
     </section>
+  );
+}
+
+// Daftar skill (ikon dan label)
+const skills = [
+  { icon: <FaHtml5 className="text-orange-600 w-20 h-20" />, label: "HTML" },
+  { icon: <FaCss3Alt className="text-blue-600 w-20 h-20" />, label: "CSS" },
+  { icon: <SiTailwindcss className="text-teal-400 w-20 h-20" />, label: "Tailwind" },
+  { icon: <FaJs className="text-yellow-400 w-20 h-20" />, label: "JavaScript" },
+  { icon: <FaReact className="text-blue-400 w-20 h-20" />, label: "React JS" },
+  { icon: <FaNodeJs className="text-green-600 w-20 h-20" />, label: "Node.js" },
+  { icon: <SiExpress className="text-gray-700 w-20 h-20" />, label: "Express.js" },
+  { icon: <SiMysql className="text-blue-500 w-20 h-20" />, label: "MySQL" },
+  { icon: <SiMongodb className="text-green-500 w-20 h-20" />, label: "MongoDB" },
+  { icon: <FaFigma className="text-pink-500 w-20 h-20" />, label: "Figma" },
+];
+
+// Komponen individual skill
+function SkillItem({ icon, label }) {
+  return (
+    <div className="flex flex-col items-center min-w-[100px]">
+      {icon}
+      <Typography
+        variant="small"
+        className="font-normal text-gray-500 mt-2 text-xs sm:text-sm lg:text-base"
+      >
+        {label}
+      </Typography>
+    </div>
   );
 }
 

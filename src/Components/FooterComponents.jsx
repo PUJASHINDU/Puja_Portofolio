@@ -24,10 +24,10 @@ const FooterComponents = () => {
       <div className="mx-auto w-full max-w-7xl px-8 ">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
 
-          <Typography variant="h5" className="mb-6 mt-5 text-gray-500 font-poppins">
+          <Typography variant="h5" className="mb-6 mt-5 text-customBlue font-poppins">
             PujaShindu Portofolio
             <br />
-            <span className='text-gray-400 font-poppins text-xs'>Serving you in the best  experience</span>
+            <span className='text-customBlue font-poppins text-xs'>Serving you in the best  experience</span>
           </Typography>
 
           <div className="grid grid-cols-3 justify-between gap-4 mt-5 text-white">
@@ -35,7 +35,7 @@ const FooterComponents = () => {
               <ul key={title}>
                 <Typography
                   variant="small"
-                  className="mb-3 font-poppins text-customBrown font-semibold"
+                  className="mb-3 font-poppins text-customBlue font-semibold"
                 >
                   {title}
                 </Typography>
