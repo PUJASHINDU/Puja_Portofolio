@@ -33,6 +33,12 @@ const CardProject = () => {
         "Rancangan tampilan user interface (UI) untuk sistem tour Bali Pure Tour menggunakan Figma.",
       icon: <FaPaintBrush className="text-customBlue w-12 h-12 mb-4" />,
     },
+     {
+      title: "Project UI Traveling Kuy",
+      description:
+        "Rancangan tampilan user interface (UI) untuk sistem tour Bali Pure Tour menggunakan Figma.",
+      icon: <FaPaintBrush className="text-customBlue w-12 h-12 mb-4" />,
+    },
     {
       title: "Project Backend API",
       description:
