@@ -1,73 +1,70 @@
-import { Card, CardBody, Typography } from "@material-tailwind/react";
-import serviceone from "../assets/service/serviceone.png";
-import servicetwo from "../assets/service/servicetwo.png";
-import servicetree from "../assets/service/servicetree.png";
+import { Typography } from '@material-tailwind/react';
+import React from 'react';
 
-export function LogoSection6() {
+import iconchek from '../assets/service/check.png';
+import About from '../assets/service/Service_Img.png';
+
+const ServiceComponents = () => {
   return (
-    <section className="py-8 px-4 sm:px-8 lg:py-20">
-      <div className="container mx-auto grid gap-10 lg:grid-cols-2 items-center">
-        {/* Bagian Typography */}
-        <div className="text-center lg:text-left">
+    <div className="container mx-auto px-4 lg:px-8 py-8">
+      {/* Grid Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:ml-7">
+        {/* Bagian Gambar */}
+        <div className="w-full">
+          <img
+            src={About}
+            alt="Tour Image"
+            className="w-full h-auto rounded-xl shadow-lg"
+          />
+        </div>
+
+        {/* Bagian Teks */}
+        <div className="flex flex-col items-start ">
+          {/* Section Title */}
           <Typography
             variant="h1"
-            className="mb-5 !text-2xl !leading-snug lg:!text-3xl text-customBlue font-poppins lg:-mt-80"
+            className="font-poppins text-customGreenslow text-lg lg:text-xl leading-relaxed"
           >
-            The services I provide
+            <span className="text-customBlue font-semibold">
+              Layanan Tersedia Siap Membantu ✨
+            </span>
           </Typography>
           <Typography
-            variant="lead"
-            className="mx-auto max-w-xl !text-gray-500 lg:mx-0 mb-10 text-justify text-[18px] font-poppins"
+            variant="paragraph"
+            className="mt-4 text-customGreenslow text-sm lg:text-base font-poppins text-gray-600 text-justify"
           >
-            I offer website creation and development services from start to finish, focusing on responsive UI design, security, and performance. Using modern technologies like React.js and Tailwind CSS, I am ready to create attractive,
-            functional websites that are accessible across various devices, tailored to your business needs.
+            Menyediakan layanan pembuatan dan pengembangan website dari awal hingga selesai, dengan fokus pada desain UI yang responsif, keamanan, dan performa. Menggunakan teknologi modern seperti React.js dan Tailwind CSS, Node js Exspres js serta Mysql saya siap membangun website yang menarik, fungsional, dan dapat diakses di berbagai perangkat, sesuai dengan kebutuhan bisnis Anda.
           </Typography>
-        </div>
 
-        {/* Bagian Card */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Card 1 */}
-          <Card className="w-full shadow-lg h-auto py-4">
-            <img src={servicetree} alt="Website creation" className="w-32 h-32 object-cover mx-auto mt-2" />
-            <CardBody className="text-center">
-              <Typography variant="h5" color="blue-gray" className="mb-2 font-poppins">
-                Website Creation
-              </Typography>
-              <Typography variant="small" className="text-gray-500 font-poppins">
-                I provide full-cycle website creation services.
-              </Typography>
-            </CardBody>
-          </Card>
+          <Typography
+            variant="paragraph"
+            className="mt-2 -mb-2 text-gray-600 text-sm lg:text-base font-poppins"
+          >
+            Layanan Tersedia
+          </Typography>
 
-          {/* Card 2 */}
-          <Card className="w-full shadow-lg h-auto py-4">
-            <img src={servicetwo} alt="Website Development" className="w-32 h-32 object-cover mx-auto mt-2" />
-            <CardBody className="text-center">
-              <Typography variant="h5" color="blue-gray" className="mb-2 font-poppins">
-                Website Development
-              </Typography>
-              <Typography variant="small" className="text-gray-500 font-poppins">
-                Creating scalable and high-performance websites.
-              </Typography>
-            </CardBody>
-          </Card>
-
-          {/* Card 3 */}
-          <Card className="w-full shadow-lg h-auto py-4 sm:col-span-2">
-            <img src={serviceone} alt="UI Design" className="w-32 h-32 object-cover mx-auto mt-2" />
-            <CardBody className="text-center">
-              <Typography variant="h5" color="blue-gray" className="mb-2 font-poppins">
-                UI Design
-              </Typography>
-              <Typography variant="small" className="text-gray-500 font-poppins">
-                Designing user-friendly and aesthetically pleasing interfaces.
-              </Typography>
-            </CardBody>
-          </Card>
+          {/* Services List */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full text-gray-600 font-poppins">
+            {[
+              'Landing Page',
+              'E-commerce',
+              'Website Travel',
+              'Componay Profile',
+              'Undangan Online',
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="flex items-center space-x-4 text-sm lg:text-base"
+              >
+                <img src={iconchek} alt="Check Icon" className="w-5 h-5" />
+                <Typography as="span" className='font-poppins '>{service}</Typography>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
-export default LogoSection6;
+export default ServiceComponents;

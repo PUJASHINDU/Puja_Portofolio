@@ -21,7 +21,7 @@ const AboutComponents = () => {
         <div className="w-full md:w-1/3 text-center md:text-left">
           <h2 className="text-xl font-semibold mb-2 text-customBlue">Puja Shindu</h2>
           <p className="text-base leading-relaxed mb-4 text-gray-700 text-justify">
-            I’m a passionate Fullstack Developer and UI/UX Designer with a strong focus on building intuitive, user-friendly, and visually appealing digital experiences. I enjoy developing complete applications—from clean front-end interfaces to robust back-end systems. A graduate in Computer Systems from ITB Stikom Bali.
+            Saya adalah seorang Fullstack Developer dan UI/UX Designer yang memiliki passion tinggi dalam membangun pengalaman digital yang intuitif, mudah digunakan, dan menarik secara visual. Saya menikmati proses pengembangan aplikasi secara menyeluruh—mulai dari antarmuka frontend yang bersih hingga sistem backend yang kuat. Lulusan Sistem Komputer dari ITB Stikom Bali.
           </p>
           <button className="mt-4 px-5 py-2 rounded-full bg-customBlue text-white font-semibold hover:bg-lime-600 transition">
             Download CV
@@ -35,9 +35,10 @@ const AboutComponents = () => {
 
         {/* Kanan: Stat + Icons */}
         <div className="w-full md:w-1/3 text-center md:text-left">
-          <h2 className="text-xl font-semibold mb-2 text-customBlue">Digital Creation</h2>
+          <h2 className="text-xl font-semibold mb-2 text-customBlue">Pengembangan Produk Digital</h2>
           <p className="text-base leading-relaxed mb-4 text-gray-700 text-justify md:text-left">
-            Focused on delivering user-centered and impactful digital experiences through UI/UX and fullstack development. Dedicated to quality, continuous improvement, and creating designs that truly matter.
+            Fokus pada penyediaan pengalaman digital yang berpusat pada pengguna dan berdampak melalui pengembangan UI/UX dan fullstack.
+            Berkomitmen pada kualitas, perbaikan berkelanjutan, dan menciptakan desain yang benar-benar memiliki nilai.
           </p>
 
           {/* Icons */}
