@@ -11,7 +11,6 @@ import {
   SiTailwindcss,
   SiExpress,
   SiMysql,
-  SiMongodb,
 } from "react-icons/si";
 
 export function SkilComponents() {
@@ -72,7 +71,6 @@ const skills = [
   { icon: <FaNodeJs className="text-green-600 w-20 h-20" />, label: "Node.js" },
   { icon: <SiExpress className="text-gray-700 w-20 h-20" />, label: "Express.js" },
   { icon: <SiMysql className="text-blue-500 w-20 h-20" />, label: "MySQL" },
-  { icon: <SiMongodb className="text-green-500 w-20 h-20" />, label: "MongoDB" },
   { icon: <FaFigma className="text-pink-500 w-20 h-20" />, label: "Figma" },
 ];
 
