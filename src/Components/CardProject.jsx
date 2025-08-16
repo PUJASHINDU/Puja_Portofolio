@@ -60,7 +60,7 @@ const CardProject = () => {
       description:
         "Pengembangan antarmuka web interaktif menggunakan React.js dan Tailwind CSS.",
       icon: <FaLaptopCode className="text-customBlue w-12 h-12 mb-4" />,
-      link: "https://travelingkuy-new.vercel.app",
+      linkweb: "https://travelingkuy-new.vercel.app",
       dialogContent: (
         <div>
           <p className="mb-2 text-gray-600">
