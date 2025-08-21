@@ -23,9 +23,14 @@ const AboutComponents = () => {
           <p className="text-base leading-relaxed mb-4 text-gray-700 text-justify">
             Saya adalah seorang Fullstack Developer dan UI/UX Designer yang memiliki passion tinggi dalam membangun pengalaman digital yang intuitif, mudah digunakan, dan menarik secara visual. Saya menikmati proses pengembangan aplikasi secara menyeluruh—mulai dari antarmuka frontend yang bersih hingga sistem backend yang kuat. Lulusan Sistem Komputer dari ITB Stikom Bali.
           </p>
-          <button className="mt-4 px-5 py-2 rounded-full bg-customBlue text-white font-semibold hover:bg-lime-600 transition">
-            Download CV
-          </button>
+          <a
+            href="https://drive.google.com/file/d/15wHtrf49aIGSvF-_S15Hw7gWbgjvsT0d/view?usp=sharing" // path CV kamu
+            download="CV-Puja-Shindu.pdf"     // nama file saat di-download
+          >
+            <button className="mt-4 px-5 py-2 rounded-full bg-customBlue text-white font-semibold hover:bg-lime-600 transition">
+              Download CV
+            </button>
+          </a>
         </div>
 
         {/* Tengah: Foto Profil */}

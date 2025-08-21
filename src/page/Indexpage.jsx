@@ -4,19 +4,45 @@ import AboutComponents from '../Components/AboutComponents'
 import SkilComponents from '../Components/SkilComponents'
 import ServiceComponents from '../Components/ServiceComponents'
 import FooterComponents from '../Components/FooterComponents'
-import Chatbot from '../Components/Chatbot'
 import ChatWidget from '../Components/ChatWidget'
 import CardProject from '../Components/CardProject'
+
 const Indexpage = () => {
   return (
     <div>
       <NavbarComponents />
-      <AboutComponents />
-      <SkilComponents />
-      <CardProject />
+
+      {/* Beranda */}
+      <div id="home" className="pt-20">
+        <h1 className="text-center text-3xl font-bold"></h1>
+      </div>
+
+      {/* Tentang */}
+      <div id="about, beranda">
+        <AboutComponents />
+      </div>
+
+      {/* Skill */}
+      <div id="skills">
+        <SkilComponents />
+      </div>
+
+      {/* Project */}
+      <div id="projects">
+        <CardProject />
+      </div>
+
       <ChatWidget/>
-      <ServiceComponents/>
-      <FooterComponents/>
+
+      {/* Layanan */}
+      <div id="services">
+        <ServiceComponents />
+      </div>
+
+      {/* Kontak */}
+      <div id="contact">
+        <FooterComponents />
+      </div>
     </div>
   )
 }

@@ -28,6 +28,7 @@ const CardProject = () => {
         "Sistem pemesanan tour dengan fitur booking online, autentikasi pengguna, dan integrasi Midtrans.",
       icon: <FaGlobe className="text-customBlue w-12 h-12 mb-4" />,
       linkweb: "https://balipuretour.com",
+      linkpdf: "https://drive.google.com/file/d/15wHtrf49aIGSvF-_S15Hw7gWbgjvsT0d/view?usp=sharing",
       dialogContent: (
         <div>
           <p className="mb-2 text-gray-600 font-poppins">
@@ -258,47 +259,54 @@ const CardProject = () => {
             </Button>
 
             {/* Fullstack & Frontend = dua tombol */}
-            {["Project Website Fullstack", "Project Website Frontend Traveling Kuy"].includes(
-              cardContent[openDialogIndex].title
-            ) ? (
+            {cardContent[openDialogIndex] && (
               <>
-                {cardContent[openDialogIndex].linkweb && (
-                  <a
-                    href={cardContent[openDialogIndex].linkweb}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="text" className="font-poppins mr-2 text-customBlue">
-                      <span>Open Website</span>
-                    </Button>
-                  </a>
-                )}
-                {/* {cardContent[openDialogIndex].linkgit && (
-                  <a
-                    href={cardContent[openDialogIndex].linkgit}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="text" className="font-poppins text-customBlue">
-                      <span>Open Github</span>
-                    </Button>
-                  </a>
-                )} */}
+                {/* Project Website Fullstack → Open Portfolio */}
+                {cardContent[openDialogIndex].title === "Project Website Fullstack" &&
+                  cardContent[openDialogIndex].linkpdf && (
+                    <a
+                      href={cardContent[openDialogIndex].linkpdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="text" className="font-poppins text-customBlue">
+                        <span>Open Documentasi</span>
+                      </Button>
+                    </a>
+                  )}
+
+                {/* Project Website Frontend Traveling Kuy → Open Website */}
+                {cardContent[openDialogIndex].title === "Project Website Frontend Traveling Kuy" &&
+                  cardContent[openDialogIndex].linkweb && (
+                    <a
+                      href={cardContent[openDialogIndex].linkweb}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="text" className="font-poppins text-customBlue">
+                        <span>Open Website</span>
+                      </Button>
+                    </a>
+                  )}
+
+                {/* Project lain → Open */}
+                {!["Project Website Fullstack", "Project Website Frontend Traveling Kuy"].includes(
+                  cardContent[openDialogIndex].title
+                ) &&
+                  cardContent[openDialogIndex].link && (
+                    <a
+                      href={cardContent[openDialogIndex].link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="text" className="font-poppins text-customBlue">
+                        <span>Open</span>
+                      </Button>
+                    </a>
+                  )}
               </>
-            ) : (
-              // Untuk dialog lain, hanya satu tombol "Open"
-              cardContent[openDialogIndex].link && (
-                <a
-                  href={cardContent[openDialogIndex].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="text" className="font-poppins text-customBlue">
-                    <span>Open</span>
-                  </Button>
-                </a>
-              )
             )}
+
           </DialogFooter>
 
         </Dialog>
