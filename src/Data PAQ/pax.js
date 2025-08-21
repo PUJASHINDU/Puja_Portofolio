@@ -1,86 +1,62 @@
 export const faq = {
   id: [
     {
-      question: "Layanan apa saja yang tersedia?",
-      answer: "Kami menyediakan layanan pembuatan Website Frontend, Backend, Full-stack, UI/UX Design, serta pembuatan prototipe interaktif.",
+      question: "Lulusan dari mana?",
+      answer: "Saya lulusan S1 Sistem Komputer dari ITB Stikom Bali dengan fokus pada pengembangan aplikasi web dan desain antarmuka.",
     },
     {
-      question: "Apakah bisa bantu buat portfolio untuk cari kerja?",
-      answer: "Tentu! Kami bantu buat portfolio digital yang profesional untuk meningkatkan peluang kerja Anda.",
+      question: "Skill apa saja yang dimiliki?",
+      answer: "Saya memiliki skill di bidang Frontend (Java Script, React.js, Next.js, Tailwind CSS), Backend (Node.js, Express.js, MySQL), serta UI/UX Design menggunakan Figma.",
     },
     {
-      question: "Berapa lama pengerjaan project?",
-      answer: "Tergantung kompleksitas, umumnya 1-2 minggu untuk frontend saja, dan 2-4 minggu untuk full-stack.",
+      question: "Berapa banyak project yang sudah dibuat?",
+      answer: "Saya telah mengerjakan beberapa project seperti website booking paket tour di PT Bali Pure Tour, project website studi independen Traveling Kuy, aplikasi mobile Konek.Market, prototipe UI Traveling Kuy, dan prototipe UI Bali Pure Tour.",
     },
     {
-      question: "Apa teknologi yang digunakan?",
-      answer: "Kami menggunakan React.js, Next.js, Tailwind CSS, Node.js, Express, dan Figma untuk UI/UX.",
+      question: "Apakah punya pengalaman kerja atau magang?",
+      answer: "Ya, saya pernah magang sebagai Android Developer di PT Mari Buka Akses dan terlibat dalam pengembangan aplikasi mobile.",
     },
     {
-      question: "Berapa biayanya?",
-      answer: "Harga mulai dari Rp1.000.000 untuk frontend sederhana, hingga Rp5.000.000+ untuk project full-stack dengan fitur lengkap.",
+      question: "Apakah bisa kerja remote maupun onsite?",
+      answer: "Ya, saya terbuka untuk bekerja baik secara remote maupun onsite sesuai kebutuhan perusahaan.",
     },
     {
-      question: "Apakah termasuk revisi?",
-      answer: "Ya, termasuk 2 kali revisi besar dan 3 kali revisi kecil.",
+      question: "Apakah terbuka untuk freelance atau full-time?",
+      answer: "Saya terbuka untuk peluang kerja freelance maupun full-time.",
     },
     {
-      question: "Apakah bisa konsultasi dulu?",
-      answer: "Tentu! Konsultasi awal gratis melalui WhatsApp, Zoom, atau Google Meet.",
-    },
-    {
-      question: "Apakah mendapat file desain juga?",
-      answer: "Ya, Anda akan mendapatkan file Figma, kode sumber, serta dokumentasi teknis.",
-    },
-    {
-      question: "Apakah bisa dibuat multi bahasa?",
-      answer: "Ya, kami bisa buat website Anda dengan dukungan bahasa ganda (Indonesia & Inggris).",
-    },
-    {
-      question: "Apakah dapat sertifikat atau bukti pengerjaan?",
-      answer: "Ya, kami sediakan sertifikat kerja dan link live preview untuk portfolio Anda.",
+      question: "Apakah memiliki sertifikasi?",
+      answer: "Saya memiliki sertifikasi di bidang Web Development di Bisma Informatika sebagai bukti kompetensi.",
     },
   ],
   en: [
     {
-      question: "What services do you offer?",
-      answer: "We offer Frontend, Backend, Full-stack Web Development, UI/UX Design, and interactive prototyping.",
+      question: "What is your educational background?",
+      answer: "I graduated with a Bachelor's degree in Computer Systems from ITB Stikom Bali, focusing on web development and UI/UX design.",
     },
     {
-      question: "Can you help build a portfolio for job applications?",
-      answer: "Absolutely! We create professional digital portfolios to boost your hiring chances.",
+      question: "What skills do you have?",
+      answer: "My skills include Frontend (Java script, React.js, Next.js, Tailwind CSS), Backend (Node.js, Express.js, MySQL), and UI/UX Design with Figma.",
     },
     {
-      question: "How long does a project take?",
-      answer: "Depending on complexity: 1–2 weeks for frontend only, 2–4 weeks for full-stack development.",
+      question: "How many projects have you completed?",
+      answer: "I have worked on several projects such as a tour booking website at PT Bali Pure Tour, an independent study website project Traveling Kuy, a mobile app project Konek.Market, UI prototype for Traveling Kuy, and UI prototype for Bali Pure Tour.",
     },
     {
-      question: "What tech stack do you use?",
-      answer: "We use React.js, Next.js, Tailwind CSS, Node.js, Express, and Figma for design.",
+      question: "Do you have work or internship experience?",
+      answer: "Yes, I interned as an Android Developer at PT Mari Buka Akses and was involved in mobile application development.",
     },
     {
-      question: "How much does it cost?",
-      answer: "Starting from IDR 1,000,000 for a simple frontend site to IDR 5,000,000+ for full-stack apps.",
+      question: "Are you available for remote or onsite work?",
+      answer: "Yes, I am open to both remote and onsite work opportunities depending on company needs.",
     },
     {
-      question: "Are revisions included?",
-      answer: "Yes. We offer 2 major revisions and 3 minor revisions.",
+      question: "Are you open to freelance or full-time jobs?",
+      answer: "I am open to both freelance and full-time job opportunities.",
     },
     {
-      question: "Can I consult first before starting?",
-      answer: "Sure! Free initial consultation via WhatsApp, Zoom, or Google Meet.",
-    },
-    {
-      question: "Do I get the design files too?",
-      answer: "Yes, you will receive Figma files, source code, and technical documentation.",
-    },
-    {
-      question: "Can the website be multilingual?",
-      answer: "Yes, we can develop your site with multilingual (Indonesian & English) support.",
-    },
-    {
-      question: "Do you provide a certificate or proof of work?",
-      answer: "Yes, we provide a certificate of work and a live preview link for your portfolio.",
+      question: "Do you have certifications?",
+      answer: "I hold a Web Development certification from Bisma Informatika as proof of my competence.",
     },
   ]
 };
