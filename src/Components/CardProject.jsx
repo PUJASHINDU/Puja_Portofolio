@@ -18,6 +18,7 @@ import {
   FaLaptopCode,
   FaPaintBrush,
   FaDatabase,
+  FaMobileAlt
 } from "react-icons/fa";
 
 const CardProject = () => {
@@ -56,6 +57,7 @@ const CardProject = () => {
         </div>
       ),
     },
+
     {
       title: "Project Website Frontend Traveling Kuy",
       description:
@@ -80,6 +82,34 @@ const CardProject = () => {
         </div>
       ),
     },
+
+
+    {
+      title: "Project Applikasi Android",
+      description:
+        "Pengembangan Project aplikasikasi android konek market magang PT. Mari Buka Akses  menggunakan React Native dan Tailwind CSS.",
+      icon: <FaMobileAlt className="text-customBlue w-12 h-12 mb-4" />,
+      linkpdf: "https://drive.google.com/file/d/1T1KIW2DI5XN3VaOu4YpdyPaeYkP2XX14/view",
+      dialogContent: (
+        <div>
+          <p className="mb-2 text-gray-600">
+            Konek Market adalah platform marketplace via website dan aplikasi mobile yang bertujuan memudahkan pengguna menemukan, membandingkan, dan berlangganan paket layanan internet dari       berbagai penyedia (ISP) berdasarkan lokasi dan kebutuhan. Informasi mencakup kecepatan, harga, cakupan area, hingga fitur tambahan semua tersedia di satu tempat.
+          </p>
+          <ul className="list-disc list-inside text-sm text-gray-600">
+            <li>Login</li>
+            <li>Registrasi</li>
+            <li>Halaman Utama</li>
+            <li>Halaman Lapor Gangguan</li>
+            <li>Halaman Tagihan</li>
+            <li>Halaman Profile Member</li>
+          </ul>
+          <p className="mt-2 text-customBlue font-medium font-poppins">
+            Klik Button dibawah jika ingin meninjau lebih lanjut ✨
+          </p>
+        </div>
+      ),
+    },
+
     {
       title: "Project UI Bali Pure Tour",
       description:
@@ -261,19 +291,21 @@ const CardProject = () => {
             {/* Fullstack & Frontend = dua tombol */}
             {cardContent[openDialogIndex] && (
               <>
-                {/* Project Website Fullstack → Open Portfolio */}
-                {cardContent[openDialogIndex].title === "Project Website Fullstack" &&
-                  cardContent[openDialogIndex].linkpdf && (
+                {["Project Website Fullstack", "Project Applikasi Android"].includes(
+                  cardContent[openDialogIndex]?.title
+                ) &&
+                  cardContent[openDialogIndex]?.linkpdf && (
                     <a
                       href={cardContent[openDialogIndex].linkpdf}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Button variant="text" className="font-poppins text-customBlue">
-                        <span>Open Documentasi</span>
+                        <span>Open Dokumentasi</span>
                       </Button>
                     </a>
                   )}
+
 
                 {/* Project Website Frontend Traveling Kuy → Open Website */}
                 {cardContent[openDialogIndex].title === "Project Website Frontend Traveling Kuy" &&
