@@ -308,7 +308,9 @@ const CardProject = () => {
 
 
                 {/* Project Website Frontend Traveling Kuy → Open Website */}
-                {cardContent[openDialogIndex].title === "Project Website Frontend Traveling Kuy" &&
+                {["Project Website Fullstack", "Project Website Frontend Traveling Kuy"].includes(
+                  cardContent[openDialogIndex]?.title
+                ) &&
                   cardContent[openDialogIndex].linkweb && (
                     <a
                       href={cardContent[openDialogIndex].linkweb}
