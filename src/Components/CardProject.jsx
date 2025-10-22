@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import uiimgbalipuretour from '../assets/service/balipuretour_ui.jpg'
-import uiimgtravelingkuy from '../assets/service/traveling kuy_ui.jpg'
-
+import uiimgbalipuretour from "../assets/service/balipuretour_ui.jpg";
+import uiimgtravelingkuy from "../assets/service/traveling kuy_ui.jpg";
 import {
   Card,
   CardBody,
@@ -18,8 +17,9 @@ import {
   FaLaptopCode,
   FaPaintBrush,
   FaDatabase,
-  FaMobileAlt
+  FaMobileAlt,
 } from "react-icons/fa";
+
 
 const CardProject = () => {
   const cardContent = [
@@ -27,7 +27,7 @@ const CardProject = () => {
       title: "Project Website Fullstack",
       description:
         "Sistem pemesanan tour dengan fitur booking online, autentikasi pengguna, dan integrasi Midtrans.",
-      icon: <FaGlobe className="text-customBlue w-12 h-12 mb-4" />,
+      icon: <FaGlobe className="text-blue-500 w-12 h-12 mb-4" />,
       linkweb: "https://balipuretour.com",
       linkpdf: "https://drive.google.com/file/d/15wHtrf49aIGSvF-_S15Hw7gWbgjvsT0d/view?usp=sharing",
       dialogContent: (
@@ -51,7 +51,7 @@ const CardProject = () => {
             <li>Meninjau pembayaran</li>
             <li>Meninajau laporan keuangan</li>
           </ul>
-          <p className="mt-2 text-customBlue font-medium font-poppins">
+          <p className="mt-2 text-gray-600 text-lg font-medium font-poppins">
             Klik Button dibawah jika ingin meninjau lebih lanjut ✨
           </p>
         </div>
@@ -62,7 +62,7 @@ const CardProject = () => {
       title: "Project Website Frontend Traveling Kuy",
       description:
         "Pengembangan antarmuka web interaktif menggunakan React.js dan Tailwind CSS.",
-      icon: <FaLaptopCode className="text-customBlue w-12 h-12 mb-4" />,
+      icon: <FaLaptopCode className="text-blue-500 w-12 h-12 mb-4" />,
       linkweb: "https://travelingkuy-new.vercel.app",
       dialogContent: (
         <div>
@@ -76,8 +76,34 @@ const CardProject = () => {
             <li>Tampilan Villa dan Destinaasi wisata yang siap dibooking</li>
             <li>Tampilan Form Booking</li>
           </ul>
-          <p className="mt-2 text-customBlue font-medium font-poppins">
+          <p className="mt-2 text-gray-600 text-lg font-medium font-poppins">
             Klik Button dibawah jika ingin meninjau lebih lanjut ✨
+          </p>
+        </div>
+      ),
+    },
+
+    {
+      title: "Landing Page Backpaks Store",
+      description:
+        "Projek Pribadi Website Landing Page Untuk Toko Ransel",
+      icon: <FaLaptopCode className="text-blue-500 w-12 h-12 mb-4" />,
+      linkweb: "https://backpack-boys.vercel.app/",
+      dialogContent: (
+        <div>
+          <p className="mb-2 text-gray-600">
+            Landing Page Backpaks Store adalah proyek pribadi yang dirancang untuk menampilkan
+            produk-produk ransel dengan tampilan modern dan interaktif. Website ini dibuat untuk
+            mempromosikan berbagai jenis ransel dengan desain responsif dan estetika yang menarik.
+            Dibangun menggunakan JavaScript, React.js, dan Tailwind CSS.
+          </p>
+          <ul className="list-disc list-inside text-sm text-gray-600">
+            <li>Menampilkan koleksi produk ransel dengan desain menarik</li>
+            <li>Memiliki tampilan hero section yang modern dan clean</li>
+            <li>Responsive design yang optimal di berbagai perangkat</li>
+          </ul>
+          <p className="mt-2 text-gray-600 text-lg font-medium font-poppins">
+            Klik tombol di bawah untuk melihat tampilan websitenya ✨
           </p>
         </div>
       ),
@@ -88,7 +114,7 @@ const CardProject = () => {
       title: "Project Applikasi Android",
       description:
         "Pengembangan Project aplikasikasi android konek market magang PT. Mari Buka Akses  menggunakan React Native dan Tailwind CSS.",
-      icon: <FaMobileAlt className="text-customBlue w-12 h-12 mb-4" />,
+      icon: <FaMobileAlt className="text-blue-500 w-12 h-12 mb-4" />,
       linkpdf: "https://drive.google.com/file/d/1T1KIW2DI5XN3VaOu4YpdyPaeYkP2XX14/view",
       dialogContent: (
         <div>
@@ -103,7 +129,7 @@ const CardProject = () => {
             <li>Halaman Tagihan</li>
             <li>Halaman Profile Member</li>
           </ul>
-          <p className="mt-2 text-customBlue font-medium font-poppins">
+          <p className="mt-2 text-gray-600 text-lg font-medium font-poppins">
             Klik Button dibawah jika ingin meninjau lebih lanjut ✨
           </p>
         </div>
@@ -114,7 +140,7 @@ const CardProject = () => {
       title: "Project UI Bali Pure Tour",
       description:
         "Rancangan tampilan user interface (UI) untuk sistem tour Bali Pure Tour menggunakan Figma.",
-      icon: <FaPaintBrush className="text-customBlue w-12 h-12 mb-4" />,
+      icon: <FaPaintBrush className="text-blue-500 w-12 h-12 mb-4" />,
       link: "https://www.figma.com/design/eSymh54tUS8uw8EhLkgC8L/Bali-Pure-Tour-Website?node-id=0-1&p=f&t=vdMMDA7Hvw8bs9op-0",
       dialogContent: (
         <div>
@@ -132,7 +158,7 @@ const CardProject = () => {
             <li>Font Poppins</li>
             <li>Pallet warna #0B5656, #718686, #D32828, #FF8A00</li>
           </ul>
-          <p className="mt-2 text-customBlue font-medium font-poppins">
+          <p className="mt-2 text-gray-600 text-lg font-medium font-poppins">
             Klik Button dibawah jika ingin meninjau lebih lanjut ✨
           </p>
         </div>
@@ -142,11 +168,11 @@ const CardProject = () => {
       title: "Project UI Traveling Kuy",
       description:
         "Rancangan tampilan user interface (UI) untuk sistem tour Traveling Kuy menggunakan Figma.",
-      icon: <FaPaintBrush className="text-customBlue w-12 h-12 mb-4" />,
+      icon: <FaPaintBrush className="text-blue-500 w-12 h-12 mb-4" />,
       link: "https://www.figma.com/design/T6IXHiQ8pQN16n1tvkUkRT/UI-Website-Travel-Group-4?node-id=1392-767&t=yy15N6UpRCOwDYc5-0",
       dialogContent: (
         <div>
-          <p className="mb-2 text-customBlue">
+          <p className="mb-2 text-blue-500">
             UI website Traveling Kuy dirancang menggunakan Figma, dengan desain yang telah disesuaikan untuk kebutuhan prototyping.
           </p>
           <img
@@ -159,7 +185,7 @@ const CardProject = () => {
             <li>Font Poppins</li>
             <li>Pallet warna #8D6B44, #FF8A00, #E7E7E7</li>
           </ul>
-          <p className="mt-2 text-customBlue font-medium font-poppins">
+          <p className="mt-2 text-gray-600 text-lg font-medium font-poppins">
             Klik Button dibawah jika ingin meninjau lebih lanjut ✨
           </p>
         </div>
@@ -169,7 +195,7 @@ const CardProject = () => {
       title: "Project Backend API",
       description:
         "Pembuatan REST API untuk sistem booking tour pada website Bali Pure Tour menggunakan Node.js, Express, MySQL",
-      icon: <FaDatabase className="text-customBlue w-12 h-12 mb-4" />,
+      icon: <FaDatabase className="text-blue-500 w-12 h-12 mb-4" />,
       dialogContent: (
         <div>
           <p className="mb-2 text-gray-600">
@@ -188,165 +214,134 @@ const CardProject = () => {
     },
   ];
 
+
   const [openDialogIndex, setOpenDialogIndex] = useState(null);
+  const handleOpen = (index) => setOpenDialogIndex(index);
+  const handleClose = () => setOpenDialogIndex(null);
 
-  const handleOpen = (index) => {
-    setOpenDialogIndex(index);
-  };
-
-  const handleClose = () => {
-    setOpenDialogIndex(null);
-  };
 
   return (
-    <div className="py-12 px-4 lg:px-20">
-      <div className="mb-10">
+    <div className="relative py-16 px-4 lg:px-20 bg-gradient-to-br from-[#0a0f1a] via-[#101820] to-[#182635] text-white">
+      <div className="text-left mb-14">
         <Typography
-          color="blue-gray"
+          color="white"
           variant="lead"
-          className="font-semibold text-base font-poppins sm:text-lg lg:text-2xl"
+          className="font-semibold text-3xl font-poppins tracking-wide font-poppins"
         >
           My Projects
         </Typography>
-        <p className="mt-2 text-lg text-gray-600 leading-snug font-poppins">
-          Completed real-world web development projects
+        <p className="mt-3 text-gray-300 text-lg font-poppins">
+          Completed real-world web & mobile development works
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {cardContent.map((card, index) => (
           <Card
             key={index}
-            className="shadow-lg hover:shadow-xl transition font-poppins"
+            className="bg-[#121a26]/80 backdrop-blur-md border border-[#1f2b3a] hover:border-blue-500 transition-all duration-300 rounded-2xl shadow-lg hover:shadow-blue-900/30"
           >
-            <CardBody className="font-poppins">
-              {card.icon}
+            <CardBody className="font-poppins text-left">
+              <div className="flex justify-start">{card.icon}</div>
               <Typography
                 variant="h5"
-                color="blue-gray"
-                className="mb-2 font-poppins"
+                color="white"
+                className="mb-2 font-semibold font-poppins text-xl"
               >
                 {card.title}
               </Typography>
-              <Typography className="text-[16px] font-poppins text-gray-600">
+              <Typography className="text-gray-300 font-body font-poppins text-[17px]">
                 {card.description}
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0 font-poppins">
+            <CardFooter className="pt-0 text-left">
               <Button
                 size="sm"
-                variant="text"
                 onClick={() => handleOpen(index)}
-                className="flex items-center gap-2 font-poppins text-[16px]" // Hapus mx-auto
+                className="rounded-full text-sm px-5 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-blue-500/20 hover:border-blue-400/40 hover:shadow-blue-400/30 transition-all duration-500 shadow-md"
               >
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  />
-                </svg>
+                Learn More →
               </Button>
             </CardFooter>
-
           </Card>
         ))}
       </div>
 
-      {/* Dialog Section */}
+
+      {/* Dialog */}
       {openDialogIndex !== null && (
         <Dialog
           open={true}
           handler={handleClose}
-          animate={{
-            mount: { scale: 1, y: 0 },
-            unmount: { scale: 0.9, y: -100 },
-          }}
+          className="bg-[#101820] text-white font-poppins rounded-xl"
         >
-          {/* <DialogHeader>{cardContent[openDialogIndex].title}</DialogHeader>
-          <DialogBody>{cardContent[openDialogIndex].dialogContent}</DialogBody> */}
-          <DialogHeader className="font-poppins -mb-5">
+          <DialogHeader className="text-xl font-semibold font-poppins text-gray-600">
             {cardContent[openDialogIndex].title}
           </DialogHeader>
-          <DialogBody className="font-poppins">
-            {cardContent[openDialogIndex].dialogContent}
-          </DialogBody>
-          <DialogFooter>
+          <DialogBody className="text-gray-600 font-poppins text-[16px]">{cardContent[openDialogIndex].dialogContent}</DialogBody>
+          <DialogFooter className="flex justify-end gap-2">
             <Button
               variant="text"
               color="red"
               onClick={handleClose}
-              className="mr-2 font-poppins"
+              className="text-sm backdrop-blur-md bg-white/10 hover:bg-white/20 border border-white/30 text-red-500 transition-all duration-300
+              rounded-full px-4 py-1"
             >
-              <span>Close</span>
+              Close
             </Button>
 
-            {/* Fullstack & Frontend = dua tombol */}
-            {cardContent[openDialogIndex] && (
-              <>
-                {["Project Website Fullstack", "Project Applikasi Android"].includes(
-                  cardContent[openDialogIndex]?.title
-                ) &&
-                  cardContent[openDialogIndex]?.linkpdf && (
-                    <a
-                      href={cardContent[openDialogIndex].linkpdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button variant="text" className="font-poppins text-customBlue">
-                        <span>Open Dokumentasi</span>
-                      </Button>
-                    </a>
-                  )}
-
-
-                {/* Project Website Frontend Traveling Kuy → Open Website */}
-                {["Project Website Fullstack", "Project Website Frontend Traveling Kuy"].includes(
-                  cardContent[openDialogIndex]?.title
-                ) &&
-                  cardContent[openDialogIndex].linkweb && (
-                    <a
-                      href={cardContent[openDialogIndex].linkweb}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button variant="text" className="font-poppins text-customBlue">
-                        <span>Open Website</span>
-                      </Button>
-                    </a>
-                  )}
-
-                {/* Project lain → Open */}
-                {!["Project Website Fullstack", "Project Website Frontend Traveling Kuy"].includes(
-                  cardContent[openDialogIndex].title
-                ) &&
-                  cardContent[openDialogIndex].link && (
-                    <a
-                      href={cardContent[openDialogIndex].link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button variant="text" className="font-poppins text-customBlue">
-                        <span>Open</span>
-                      </Button>
-                    </a>
-                  )}
-              </>
+            {cardContent[openDialogIndex].linkweb && (
+              <a
+                href={cardContent[openDialogIndex].linkweb}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  className="text-sm backdrop-blur-md bg-white/10 hover:bg-white/20 border border-white/30 text-white transition-all duration-300
+                  rounded-full px-4 py-1"
+                >
+                  Open Website
+                </Button>
+              </a>
             )}
 
-          </DialogFooter>
+            {cardContent[openDialogIndex].linkpdf && (
+              <a
+                href={cardContent[openDialogIndex].linkpdf}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  className="text-sm backdrop-blur-md bg-white/10 hover:bg-white/20 border border-white/30 text-white transition-all duration-300
+                  rounded-full px-4 py-1"
+                >
+                  Open Dokumentasi
+                </Button>
+              </a>
+            )}
 
+
+            {cardContent[openDialogIndex].link && (
+              <a
+                href={cardContent[openDialogIndex].link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="gradient" color="blue" className="text-sm backdrop-blur-md bg-white/10 hover:bg-white/20 border
+                border-white/30 text-white transition-all duration-300
+                  rounded-full px-4 py-1"
+                >
+                  Open
+                </Button>
+              </a>
+            )}
+          </DialogFooter>
         </Dialog>
       )}
     </div>
   );
 };
+
 
 export default CardProject;

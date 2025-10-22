@@ -50,7 +50,7 @@ const NavbarComponents = () => {
   );
 
   return (
-    <Navbar className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 bg-white shadow-md">
+    <Navbar className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-screen-xl px-4 py-2 lg:px-8 mt-3 lg:py-4 bg-white shadow-md">
       <div className="flex items-center justify-between text-customBlue">
         <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-semibold font-poppins">
           Halo, I'm PujaShindu
