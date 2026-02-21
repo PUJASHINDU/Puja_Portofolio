@@ -46,7 +46,8 @@ const AboutComponents = () => {
 
           <button
             onClick={handleDownloadCV}
-            className="mt-4 px-6 py-2.5 rounded-full bg-gradient-to-r from-lime-400 to-lime-600 text-gray-900 font-semibold hover:scale-105 hover:shadow-lg transition-transform duration-300"
+            className="mt-4 px-6 py-2.5 rounded-full bg-gradient-to-r from-lime-400
+             to-lime-600 text-gray-900 font-semibold hover:scale-105 hover:shadow-lg transition-transform duration-300 font-poppins"
           >
             Download CV
           </button>
