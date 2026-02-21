@@ -86,7 +86,7 @@ const AboutComponents = () => {
           {/* Icons */}
           <div className="flex justify-center md:justify-start gap-4 flex-wrap">
             <a
-              href="https://wa.me/6281339145075"
+              href="https://wa.me/6281228608307"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/10 rounded-full hover:bg-lime-400 hover:text-gray-900 transition duration-300"
@@ -129,7 +129,7 @@ const AboutComponents = () => {
             </div>
 
             <a
-              href="mailto:pujashindu1121@gmail.com"
+              href="mailto:shinduastawa@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/10 rounded-full hover:bg-lime-400 hover:text-gray-900 transition duration-300"
