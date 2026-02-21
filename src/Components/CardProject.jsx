@@ -226,7 +226,7 @@ const CardProject = () => {
         <Typography
           color="white"
           variant="lead"
-          className="font-semibold text-3xl font-poppins tracking-wide font-poppins"
+          className="font-semibold text-3xl font-poppins tracking-wide"
         >
           My Projects
         </Typography>
@@ -251,7 +251,7 @@ const CardProject = () => {
               >
                 {card.title}
               </Typography>
-              <Typography className="text-gray-300 font-body font-poppins text-[17px]">
+              <Typography className="text-gray-300 font-body text-[17px]">
                 {card.description}
               </Typography>
             </CardBody>
