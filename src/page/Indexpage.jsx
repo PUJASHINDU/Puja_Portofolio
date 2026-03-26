@@ -6,6 +6,8 @@ import ServiceComponents from '../Components/ServiceComponents'
 import FooterComponents from '../Components/FooterComponents'
 import ChatWidget from '../Components/ChatWidget'
 import CardProject from '../Components/CardProject'
+import JourneyTimeline from '../Components/JournyeComponents'
+import SertifComponets from '../Components/SertifComponets'
 
 const Indexpage = () => {
   return (
@@ -22,10 +24,19 @@ const Indexpage = () => {
         <AboutComponents />
       </div>
 
+       <div id="skills">
+        <JourneyTimeline />
+      </div>
+
+      <div id="skills">
+        <SertifComponets/>
+      </div>
+
       {/* Skill */}
       <div id="skills">
         <SkilComponents />
       </div>
+
 
       {/* Project */}
       <div id="projects">
