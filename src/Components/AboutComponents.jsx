@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Profile from "../assets/profile/Jasin.png";
+import Profile from "../assets/profile/Puja.png";
 import MyCV from "../assets/cv/Puja_Resume_Ats.pdf";
 import { FaInstagram, FaWhatsapp, FaGithub, FaEnvelope } from "react-icons/fa";
 
